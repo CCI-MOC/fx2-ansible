@@ -1,0 +1,6 @@
+---
+- name: Initialize iDracs after Factory Reset
+  hosts: "*CMC"
+  gather_facts: false
+  roles:
+    - cmc-idrac-init

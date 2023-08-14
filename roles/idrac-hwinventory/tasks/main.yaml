@@ -1,0 +1,3 @@
+- name: Gather Hardware Inventory
+  ansible.builtin.raw: "racadm hwinventory"
+  register: racadm_inventory

@@ -1,0 +1,6 @@
+---
+- name: Get CMC and Module Status
+  hosts: "*CMC"
+  gather_facts: false
+  roles:
+    - cmc-status

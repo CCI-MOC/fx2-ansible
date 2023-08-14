@@ -1,0 +1,6 @@
+---
+- name: Initialize CMC after Factory Reset
+  hosts: "*CMC"
+  gather_facts: false
+  roles:
+    - cmc-init

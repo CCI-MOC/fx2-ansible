@@ -1,0 +1,3 @@
+- name: Set iDracs to use DHCP
+  ansible.builtin.raw: "racadm setniccfg -m {{ item }} -d"
+  with_items: "{{ server_list }}"

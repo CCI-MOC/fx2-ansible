@@ -1,0 +1,6 @@
+---
+- name: Factory Reset iDracs
+  hosts: "*CMC"
+  gather_facts: false
+  roles:
+    - cmc-idrac-factory-reset

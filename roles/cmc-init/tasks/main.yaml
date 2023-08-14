@@ -1,0 +1,3 @@
+- name: Set CMC Name
+  ansible.builtin.raw: "racadm setchassisname {{ ansible_hostname }}"
+  with_items: "{{ server_list }}"

@@ -1,0 +1,7 @@
+- name: Get CMC Info
+  ansible.builtin.raw: "racadm getversion"
+  register: cmc_info
+
+- name: Print CMC Info
+  ansible.builtin.debug:
+    msg: "{{ cmc_info.stdout_lines }}"

@@ -1,0 +1,3 @@
+- name: Factory reset all iDrac Modules
+  ansible.builtin.raw: "racadm racresetcfg -m {{ item }}"
+  with_items: "{{ server_list }}"
