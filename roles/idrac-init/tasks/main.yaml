@@ -1,5 +1,5 @@
 - name: Set iDrac Hostname
-  ansible.builtin.raw: "racadm set System.ServerOS.HostName {{ ansible_hostname }}"
+  ansible.builtin.raw: "racadm set System.ServerOS.HostName {{ inventory_hostname }}"
 
 - name: Enable IPMI over LAN
   ansible.builtin.raw: "racadm set iDRAC.IPMILan.Enable 1"
