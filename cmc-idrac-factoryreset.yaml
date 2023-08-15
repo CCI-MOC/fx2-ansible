@@ -2,5 +2,8 @@
 - name: Factory Reset iDracs
   hosts: "*CMC"
   gather_facts: false
+  serial: 1
+  ignore_errors: true
+  ignore_unreachable: true
   roles:
-    - cmc-idrac-factory-reset
+    - cmc-idrac-factoryreset
